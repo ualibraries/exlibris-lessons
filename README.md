@@ -96,12 +96,30 @@ Step-by-step configuration tutorials for ExLibris Alma and Primo, covering admin
 
 ## Primo NDE
 
-| Lesson | Synopsis |
-|--------|----------|
-| [Views (v2)](primo-nde/final_md/alma_primo_views_v2_tutorial.md) | Create and manage Primo VE views in an NDE environment, controlling catalog access and patron-facing configuration. |
-| [UI Customization (v2)](primo-nde/final_md/alma_primo_ui_customization_v2_tutorial.md) | Apply institutional branding — logo, favicon, colors, banner, and HTML content — via the Customization Package in an NDE deployment. |
-| [Search Configuration (v2)](primo-nde/final_md/alma_primo_search_config_v2_tutorial.md) | Set up scopes, search profiles, slots, resource type filters, and quick filters for patron search in Primo NDE. |
-| [Local Fields (v2)](primo-nde/final_md/alma_primo_local_fields_v2_tutorial.md) | Extend search, faceting, and display in Primo NDE by mapping bibliographic metadata to local fields and creating local resource types. |
-| [Labels and My Library Activity (v2)](primo-nde/final_md/alma_primo_labels_activity_v2_tutorial.md) | Customize UI label text and configure the patron-facing My Library Activity page in Primo NDE. |
-| [Discovery Import Profiles (v2)](primo-nde/final_md/alma_primo_discovery_import_v2_tutorial.md) | Bring external records into Primo NDE discovery using normalization rules, process tasks, and discovery import profile configuration. |
-| [Delivery Services (v2)](primo-nde/final_md/alma_primo_delivery_v2_tutorial.md) | Configure request forms, location information display, and electronic service links for patron delivery in Primo NDE. |
+| Lesson                                                                                              | Synopsis                                                                                                                               |
+| --------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| [Views (v2)](primo-nde/final_md/alma_primo_views_v2_tutorial.md)                                    | Create and manage Primo VE views in an NDE environment, controlling catalog access and patron-facing configuration.                    |
+| [UI Customization (v2)](primo-nde/final_md/alma_primo_ui_customization_v2_tutorial.md)              | Apply institutional branding — logo, favicon, colors, banner, and HTML content — via the Customization Package in an NDE deployment.   |
+| [Search Configuration (v2)](primo-nde/final_md/alma_primo_search_config_v2_tutorial.md)             | Set up scopes, search profiles, slots, resource type filters, and quick filters for patron search in Primo NDE.                        |
+| [Local Fields (v2)](primo-nde/final_md/alma_primo_local_fields_v2_tutorial.md)                      | Extend search, faceting, and display in Primo NDE by mapping bibliographic metadata to local fields and creating local resource types. |
+| [Labels and My Library Activity (v2)](primo-nde/final_md/alma_primo_labels_activity_v2_tutorial.md) | Customize UI label text and configure the patron-facing My Library Activity page in Primo NDE.                                         |
+| [Discovery Import Profiles (v2)](primo-nde/final_md/alma_primo_discovery_import_v2_tutorial.md)     | Bring external records into Primo NDE discovery using normalization rules, process tasks, and discovery import profile configuration.  |
+| [Delivery Services (v2)](primo-nde/final_md/alma_primo_delivery_v2_tutorial.md)                     | Configure request forms, location information display, and electronic service links for patron delivery in Primo NDE.                  |
+
+### What's changed in Primo NDE
+
+These tuts cover the same seven topics as the VE tuts. But here's what's meaningfully different or expanded in each: 
+
+**1. Views (v2)** — Adds detail on the Brief Record Display tab (drag-and-drop reordering, delimiter configuration, summary/snippet checkboxes, action groups) and the Full Record Services tab (expand-by-default checkboxes, row-level Configure option). 
+
+**2. Labels and My Library Activity (v2)** — Introduces the `?debugLabels=true` URL parameter method for finding label codes directly in the browser, plus the multi-language label filter workflow. My Library Activity section adds concrete examples (Loan Date, Loan Status, Year, Main Location Name) and covers the patron self-service preferences (search history, UI language, credentials). 
+
+**3. Search Configuration (v2)** — Adds detail on **Quick Filters** (drag-and-drop ordering above results), the **Search Profile Slots column** in advanced search (for showing index options conditionally based on the selected slot), and **Resource Type Filters** in the Brief Results tab.
+
+**4. Local Fields (v2)** — Includes a regex example with explanation (`{32}[AOC]`) for local resource type mapping, and clarifies the secondary table requirement for enabling search/facet on normalization-rule fields. 
+
+**5. Delivery Services (v2)** — Restructured around the three explicit delivery sections (Request Forms, Location Information, Links). Adds the step-by-step service availability rule configuration with a concrete ISBN example. 
+
+**6. UI Customization (v2)** — The most significantly different tutorial: a practical step-by-step package workflow including folder renaming (colon → hyphen), the Assets subfolder structure, homepage HTML editing, multi-language homepage files, color theme selection, logo URL, and view-specific banner text via label code. 
+
+**7. Discovery Import Profiles (v2)** — Largely parallel to v1 but with cleaner stage labeling and a clarifying note that normalization rules must be added to a process _before_ creating the import profile.
